@@ -1,0 +1,38 @@
+<section class = "form">
+  <header class = "header">
+    Register
+  </header>
+
+  <form class = "body" [formGroup]='registerForm'  (ngSubmit)='onSubmit()'>
+    <div class="body-element">
+      <span class="body-text">First Name:</span>
+      <input type="text" class="body-input" formControlName='firstName'>
+    </div>
+
+    <div class="body-element">
+      <span class="body-text">Last Name:</span>
+      <input type="text" class="body-input" formControlName='lastName'>
+    </div>
+
+    <div class="body-element">
+      <span class="body-text">User Name:</span>
+      <input type="text" class="body-input" formControlName='userName'>
+    </div>
+
+    <div class="body-element">
+      <span class="body-text">Password:</span>
+      <input type="password" class="body-input" formControlName='password'>
+    </div>
+
+    <div class="body-element">
+      <span class="body-text">Confirm Password:</span>
+      <input type="password" class="body-input" formControlName='confirmPassword'>
+    </div>
+
+    <div class="body-element">
+      <button type="submit" class="btn-submit">Create</button>
+    </div>
+
+  </form>
+
+</section>

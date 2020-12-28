@@ -1,0 +1,33 @@
+<section class = "employees" >
+  <header class = "header">Employees</header>
+
+  <div class = "body" >
+
+    <div class = "body-header">
+      <div class = "body-element first" >
+        <span class="body-element-text">Id:</span>
+      </div>
+
+      <div class = "body-element second" >
+        <span class="body-element-text">Name:</span>
+      </div>
+
+      <div class = "body-element third" >
+        <span class="body-element-text">Position:</span>
+      </div>
+
+      <div class = "body-element fourth" >
+        <span class="body-element-text">Age:</span>
+      </div>
+
+    </div>
+
+    <div *ngIf='loading' class="body-main">
+      <div *ngFor='let emp of employees' class="train">
+        <app-employee  [employee]='emp' class="thomas"></app-employee>
+      </div>
+
+    </div>
+  </div>
+
+</section>

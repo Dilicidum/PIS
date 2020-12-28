@@ -1,0 +1,42 @@
+.nav-bar{
+  display: grid;
+  grid-template-columns: 10% auto 20% auto;
+  border-top:2px solid gray;
+  margin: 0%;
+  padding: 0%;
+  border-bottom: 1px solid gray;
+
+}
+
+.flex-container-1,.flex-container-2{
+  flex-direction: row;
+  display: flex;
+  margin: 2%;
+}
+
+.flex-container-1{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.flex-container-2{
+  grid-column-start: 4;
+  grid-column-end: -1;
+}
+
+.flex-element{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.flex-element-text{
+  display: flex;
+  font-size: 18px;
+}
+
+.flex-element-text>a{
+  text-decoration: none;
+  color: black;
+}

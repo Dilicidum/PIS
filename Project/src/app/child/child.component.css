@@ -1,0 +1,16 @@
+form{
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+form>label{
+  padding: 32px;
+}
+
+.ng-valid[required]  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}

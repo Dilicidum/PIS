@@ -1,0 +1,24 @@
+<section class="full">
+  <section class="login" >
+    <header class="header">Login</header>
+
+    <form class = "form-body" [formGroup]='loginForm' (ngSubmit)='onSubmit()'>
+      <div class="form-element">
+        <span class="form-element-text">User Name:</span>
+        <input type="text" class="input-form" formControlName='userName'>
+      </div>
+
+      <div class="form-element">
+        <span class="form-element-text">Password:</span>
+        <input type="password" class="input-form" formControlName='password'>
+      </div>
+
+      <div class="btn">
+        <button class="btn-submit" type="submit">Submit</button>
+      </div>
+
+    </form>
+  </section>
+
+
+</section>

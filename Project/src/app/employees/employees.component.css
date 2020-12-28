@@ -1,0 +1,45 @@
+.employees{
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+}
+
+.header{
+  display: flex;
+  border: 2px solid black;
+}
+
+.body-header{
+  display: flex;
+  border: 2px solid black;
+}
+
+.body-element{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2%;
+  border: 2px solid brown;
+}
+
+.body-element-text{
+  font-size: 18px;
+}
+
+.body-main{
+  display: flex;
+  border: 5px solid peru;
+  flex-direction: column;
+}
+
+.train{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  border: 5px solid yellow;
+}
+
+.thomas{
+  display: flex;
+  flex-grow: 1;
+}

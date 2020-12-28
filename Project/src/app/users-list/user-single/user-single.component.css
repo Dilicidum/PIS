@@ -1,0 +1,32 @@
+.user-card{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border: 2px solid pink;
+}
+
+.user-info-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info-header{
+  display: flex;
+  justify-content: center;
+}
+
+.user-info-text{
+  display: flex;
+  flex-direction: row;
+  border: 2px solid orange;
+}
+
+.user-info-text-properties,.user-info-text-values{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}

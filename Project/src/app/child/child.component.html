@@ -1,0 +1,29 @@
+<form [formGroup]='profileForm' (ngSubmit)='onSubmit()' fxLayout='column wrap' fxLayoutGap='32px' fxFlex='0 1 calc(33.3%-32px)' >
+  <label>
+    First Name:
+    <input type='text' formControlName='firstName' required>
+    <div *ngIf='firstName.invalid && (firstName.touched || firstName.dirty)'>
+      <div *ngIf='firstName.errors.required'>
+        First Name is required
+      </div>
+      <div *ngIf='firstName.errors.minlength'>
+        first Name must be minimum 4 length
+      </div>
+      <div *ngIf='firstName.errors.forbiddenName'>
+        First Name can`t be {{firstName.errors.forbiddenName.value}}
+      </div>
+    </div>
+  </label>
+
+  <label>
+    Last Name:
+    <input type='text' formControlName='lastName'>
+    <div *ngIf='lastName.invalid && (lastName.dirty || lastName.touched)'>
+      <div *ngIf='lastName.errors.trainspotting'>
+        {{lastName.errors.trainspotting.value}} is fordidden here
+      </div>
+    </div>
+  </label>
+
+  <button type="submit">Submit</button>
+</form>
